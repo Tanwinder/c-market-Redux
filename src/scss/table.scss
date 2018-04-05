@@ -1,0 +1,42 @@
+.table {
+    width: 95%;
+    margin: 1rem auto;
+    border-collapse: collapse;
+    tbody {
+        tr {
+            border-top: 1px solid lightcyan;
+            background-color: white;
+            &:nth-child(2n){
+                background-color: floralwhite;
+            }
+        }
+    }
+    th{
+        background-color: cadetblue;
+        text-align: left;
+        padding: 1rem;
+    }
+    td{
+        padding: 1rem;
+    }
+}
+.price {
+    color: blue;
+}
+.supply {
+    color: purple;
+}
+.marketcap {
+    color: grey;
+}
+.red {
+    color: red;
+}
+.green {
+    color: green;
+}
+.rank {
+    border-left : 1px solid gray;
+    border-right: 1px solid gray; 
+    width: .8rem;
+}

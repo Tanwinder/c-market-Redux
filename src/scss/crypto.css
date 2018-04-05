@@ -1,0 +1,9 @@
+.crypto {
+  height: auto; }
+  .crypto h1 {
+    color: blue;
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: aquamarine; }
