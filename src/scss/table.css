@@ -8,11 +8,16 @@
     .table tbody tr:nth-child(2n) {
       background-color: floralwhite; }
   .table th {
-    background-color: cadetblue;
+    background-color: lightseagreen;
     text-align: left;
-    padding: 1rem; }
+    padding: 1rem;
+    color: brown;
+    font-size: 1.3rem; }
   .table td {
     padding: 1rem; }
+    .table td:nth-child(2) {
+      font-size: 1.1rem;
+      font-weight: bold; }
 
 .price {
   color: blue; }

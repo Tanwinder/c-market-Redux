@@ -22,7 +22,10 @@ export class Table extends Component {
         })
     }
   render() {
-    const {data} = this.props;
+    const {data, loading} = this.props;
+    if(loading){
+      return(<div style={{color: 'red', textAlign: 'center', fontSize: '2em'}}>Please wait items are Loading...</div>);
+    }
     return (
       <div>
         <table className="table">
@@ -37,7 +40,7 @@ export class Table extends Component {
                 </tr>
             </thead>
             <tbody>
-                {this.getRow(data)}     
+                {this.getRow(data)}
             </tbody>
         </table>
       </div>
@@ -45,8 +48,9 @@ export class Table extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-  data: state.crypto
+const mapStateToProps = ({crypto, loading}) => ({
+  data: crypto,
+  loading: loading
 })
 
 export default connect(mapStateToProps)(Table);

@@ -5,8 +5,9 @@
   margin: 1rem auto; }
   .header button {
     padding: 10px;
-    background-color: lightblue;
+    background-color: gray;
     font-size: 1rem;
     margin-left: .5rem;
     border-radius: 4px;
-    outline: none; }
+    outline: none;
+    color: brown; }

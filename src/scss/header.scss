@@ -1,3 +1,4 @@
+$header : gray;
 .header {
     display: flex;
     justify-content: space-between;
@@ -5,10 +6,11 @@
     margin: 1rem auto; 
     button {
         padding: 10px;
-        background-color: lightblue;
+        background-color: $header;
         font-size: 1rem;
         margin-left: .5rem;
         border-radius: 4px;
         outline: none;
+        color: brown;
     }
 }

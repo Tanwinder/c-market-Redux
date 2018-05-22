@@ -6,9 +6,7 @@ import Table from './table';
 import Header from './header'
 
 export class Crypto extends Component {
-  constructor(props){
-      super(props);
-  }
+  
   componentDidMount(){
       this.props.fetchData('https://api.coinmarketcap.com/v1/ticker/?start=0&limit=100');
   }
@@ -17,16 +15,17 @@ export class Crypto extends Component {
     const { cryptoData } = this.props;
     return (
       <div className="crypto">
-        <h1>Crypto Market</h1>
+        <h1>Market</h1>
         <Header />
         <Table />
+        <Header />
       </div>
     )
   }
 }
 
-const mapStateToProps = (state) => ({
-  cryptoData : state.crypto
+const mapStateToProps = ({crypto}) => ({
+  cryptoData : crypto,
 })
 
 const mapDispatchToProps = {
